@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>cals</title>
+    <link rel="stylesheet" href="../lib/reset.css"/>
+    <link rel="stylesheet" href="./main.css"/>
+    <script src="../lib/require.js"></script>
+    <script type="text/javascript">
+
+        require.config({
+            paths: {
+                'Datepicker': '../../dest/datepicker.min'
+            }
+        });
+
+    </script>
+</head>
+<body>
+
+<div id="cals"></div>
+<script>
+    require(['Datepicker'], function (Datepicker) {
+        var node = document.getElementById('cals');
+        var i = 12;
+
+        for (; i--;) {
+            Datepicker(node, {
+                Y:(new Date).getFullYear(),
+                M:12 - i,
+                hasHeader: false,
+                hasFoot: true,
+                ongetdate:function () {
+                console.log(this.toString());
+
+            },style:'/'});
+        }
+    });
+</script>
+</body>
+</html>

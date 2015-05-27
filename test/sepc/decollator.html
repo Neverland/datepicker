@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>decollator</title>
+    <link rel="stylesheet" href="../lib/reset.css"/>
+    <link rel="stylesheet" href="./main.css"/>
+    <script src="../lib/require.js"></script>
+    <script type="text/javascript">
+
+        require.config({
+            paths: {
+                'Datepicker': '../../dest/datepicker.min'
+            }
+        });
+
+    </script>
+</head>
+<body>
+<h1>日期分隔符为-</h1>
+<div id="cals"></div>
+<script>
+    require(['Datepicker'], function (Datepicker) {
+        var node = document.getElementById('cals');
+        new Datepicker(
+            node,
+            {
+                style: '-',
+                ongetdate: function () {
+                    console.log(this.toString());
+                }
+            });
+    });
+</script>
+</body>
+</html>

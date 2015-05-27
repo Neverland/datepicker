@@ -1,0 +1,81 @@
+
+body {
+    font-size : 14px;
+}
+
+table {
+    border-collapse : collapse;
+    border          : none;
+}
+
+th {
+    background : #eee;
+}
+
+th, td {
+    border     : 1px #ccc solid;
+    padding    : 5px;
+    text-align : center;
+}
+
+.cal-container {
+    margin : 0 10px 10px 0;
+}
+
+.current-day {
+    background : red;
+}
+
+#cal {
+    border   : 2px solid red;
+    overflow : hidden;
+    height   : 92%;
+    padding  : 10px;
+    margin   : 10px;
+}
+
+#cal div, #cals .cal-container {
+    float  : left;
+    margin : 0 3px 10px 0;
+    height : 210px;
+}
+
+input {
+    width : 30px;
+}
+
+.old-day {
+    color     : #ccc;
+    font-size : 14px;
+}
+
+#api {
+    clear  : both;
+    margin : 0 auto;
+    width  : 900px;
+}
+
+#api caption {
+    font-weight : bold;
+}
+
+#api td {
+    text-align : left;
+}
+
+#cals {
+    overflow : hidden;
+    height   : 100%;
+}
+
+#cals td, #cals th {
+    padding : 12px;
+}
+
+#cals .cal-container {
+    padding    : 10px;
+    border     : 2px solid #eee;
+    overflow   : hidden;
+    height     : 1%;
+    min-height : 320px;
+}

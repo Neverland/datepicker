@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>without new</title>
+    <link rel="stylesheet" href="../lib/reset.css"/>
+    <link rel="stylesheet" href="./main.css"/>
+    <script src="../lib/require.js"></script>
+    <script type="text/javascript">
+
+        require.config({
+            paths: {
+                'Datepicker': '../../dest/datepicker.min'
+            }
+        });
+
+    </script>
+</head>
+<body>
+<div id="cals"></div>
+<script>
+    require(['Datepicker'], function (Datepicker) {
+        var node = document.getElementById('cals');
+        Datepicker(
+        node,
+        {
+            Y: 2015,
+            M: (new Date).getMonth(),
+            ongetdate: function () {
+                console.log(this.toString());
+            },
+            startYear: 2000,
+            endYear: 2030
+        });
+    });
+</script>
+</body>
+</html>

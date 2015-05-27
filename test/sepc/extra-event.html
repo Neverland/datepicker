@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>extra-event</title>
+    <link rel="stylesheet" href="../lib/reset.css"/>
+    <link rel="stylesheet" href="./main.css"/>
+    <script src="../lib/require.js"></script>
+    <script type="text/javascript">
+
+        require.config({
+            paths: {
+                'Datepicker': '../../dest/datepicker.min'
+            }
+        });
+
+    </script>
+</head>
+<body>
+
+<div id="cals"></div>
+<script>
+    require(['Datepicker'], function (Datepicker) {
+        var node = document.getElementById('cals');
+        new Datepicker(
+                node,
+                {
+                    style: '/',
+                    ongetdate: function () {
+                        console.log('ongetdate');
+                    },
+                    onrender:function () {
+                        console.log('onrender');
+                    },
+                    ongetdatestring: function () {
+                        console.log('ongetdatestring');
+                    },
+                    ongetframe: function () {
+                        console.log('ongetframe');
+                    }
+                }, function () {
+                    console.log(this);
+                });
+    });
+</script>
+</body>
+</html>

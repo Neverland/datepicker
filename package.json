@@ -9,17 +9,32 @@
     "gulp-rename": "^1.2.0",
     "gulp-uglify": "^0.3.0"
   },
+  "keywords": [
+    "javascript",
+    "ui component",
+    "datepicker"
+  ],
+  "site": "https://github.com/Neverland/datepicker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Neverland/datepicker"
+  },
+  "bugs": {
+    "url": "https://github.com/Neverland/datepicker/issues"
+  },
+  "author": {
+    "name": "ienix",
+    "email": "enix@foxmail.com"
+  },
   "dependencies": {
     "gulp": "^3.7.0"
   },
-  "main": "gulpfile.js",
+  "main": "main.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "repository": "-"
+  "license": "MIT"
 }

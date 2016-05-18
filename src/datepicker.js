@@ -720,11 +720,14 @@
     }
 
 
-    // AMD support
+    /* global define:true module:true window: true */
     if (typeof define === 'function' && define.amd) {
         define('Datepicker', [], function () {
             return Datepicker;
         });
+    }
+    else if (typeof module !== 'undefined' && module['exports']) {
+        module['exports'] = Datepicker;
     }
     else {
         window.Datepicker || (window.Datepicker = Datepicker);

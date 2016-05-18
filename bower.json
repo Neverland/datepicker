@@ -1,0 +1,20 @@
+{
+  "name": "datepick",
+  "description": "Datepicker是一个使用非常简单的日期控件，缓存没一个月份所生成的数据，减少运算量。配置丰富能够满足不同的业务需求",
+  "main": "main.js",
+  "authors": [
+    {
+      "name": "ienix",
+      "email": "enix@foxmail.com"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "ui",
+    "component",
+    "datepicker"
+  ],
+  "homepage": "https://github.com/Neverland/datepicker",
+  "private": true
+}

@@ -1,6 +1,7 @@
 {
   "name": "datepick",
-  "version": "0.0.1",
+  "version": "0.1.1",
+  "description": "Datepicker是一个使用非常简单的日期控件，缓存没一个月份所生成的数据，减少运算量。配置丰富能够满足不同的业务需求",
   "devDependencies": {
     "gulp": "^3.6.2",
     "gulp-cssmin": "^0.1.5",
@@ -22,10 +23,12 @@
   "bugs": {
     "url": "https://github.com/Neverland/datepicker/issues"
   },
-  "author": {
-    "name": "ienix",
-    "email": "enix@foxmail.com"
-  },
+  "author": [
+    {
+      "name": "ienix",
+      "email": "enix@foxmail.com"
+    }
+  ],
   "dependencies": {
     "gulp": "^3.7.0"
   },

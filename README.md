@@ -14,37 +14,37 @@
 	    <td>配置控件可选参数</td>
     </tr>
 	<tr>
-		<td>Number</td>
+		<td>number</td>
 	    <td>O.Y</td>
 	    <td>设置的年份，默认当年，范围(1970-当年+10)</td>
     </tr>
 	<tr>
-		<td>Number</td>
+		<td>number</td>
 	    <td>O.M</td>
 	    <td>设置的月份，默认当月，范围(1-12)</td>
     </tr>
 	<tr>
-		<td>String</td>
+		<td>string</td>
 	    <td>O.hasTitle</td>
 	    <td>是否有日期控制栏，默认有'true'</td>
     </tr>
 	<tr>
-		<td>String</td>
+		<td>string</td>
 	    <td>O.hasFoot</td>
 	    <td>是否有脚注用来显示年月，默认无'false'</td>
     </tr>
 	<tr>
-		<td>String</td>
+		<td>string</td>
 	    <td>O.style</td>
 	    <td>日期分隔符，默认'-'</td>
     </tr>
 	<tr>
-		<td>Number</td>
+		<td>number</td>
 	    <td>O.startYear</td>
 	    <td>开始年，默认2006</td>
     </tr>
 	<tr>
-		<td>Number</td>
+		<td>number</td>
 	    <td>O.endtYear</td>
 	    <td>结束年，默认当年加10</td>
     </tr>
@@ -125,7 +125,7 @@
  </table>
 
 ###e.g
-```
+```javascript
 new Datepicker(node,
     {
     ongetdate: function () {
